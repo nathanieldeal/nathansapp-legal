@@ -32,6 +32,7 @@
     main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
     h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
     h2 { font-size: 1.25rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
+    h3 { font-size: 1rem; margin: 24px 0 4px; }
     .meta { color: var(--muted); margin: 0 0 24px; }
     a { color: var(--link); }
     ul { padding-left: 1.25rem; }
@@ -41,38 +42,54 @@
 <body>
 <main>
   <h1>NathansApp Privacy Policy</h1>
-  <p class="meta">Effective September 18, 2026</p>
+  <p class="meta">Effective September 19, 2026</p>
 
   <p>NathansApp is a personal app for logging fluid intake, urine output, medications, lab values and symptoms, and for keeping a caregiver informed. This policy explains what information the app collects, how it is used, and the choices you have.</p>
 
   <h2>Information you provide</h2>
   <ul>
     <li><strong>Account information:</strong> your email address and password (used to sign in; passwords are stored in hashed form by our authentication provider), your name, phone number, profile photo, time zone and role (for example, caregiver).</li>
-    <li><strong>Settings:</strong> preferences such as your daily drink goal, drink presets and measurement units.</li>
+    <li><strong>Settings:</strong> preferences such as your daily drink goal, drink presets, measurement units and your Apple Health choices.</li>
     <li><strong>Health logs you enter:</strong> drinks (type, amount and time), urine output (amount, color and time), medications (name, dose and time), lab values (such as sodium, potassium, calcium, chloride and glucose), and symptoms (type, severity and notes).</li>
-    <li><strong>Caregiver and dependent information:</strong> if you are a caregiver, the profiles you create for people in your care (name, date of birth, phone number, photo and settings) and the link between your account and theirs. Caregivers are responsible for having permission to enter information about the people they care for.</li>
+    <li><strong>Caregiver and dependent links:</strong> the caregiver and the person they care for each have their own account. To link them, the dependent creates a short code in the app and gives it to the caregiver, who enters it; creating the code is how the dependent agrees to the link. A dependent has one caregiver at a time, and either person can unlink at any time. Link codes are stored only as a one-way hash and expire after ten minutes.</li>
   </ul>
 
   <h2>Information collected automatically</h2>
   <ul>
     <li><strong>Push notification token:</strong> if you allow notifications, the app stores a device token so caregiver alerts can be delivered to your phone.</li>
-    <li><strong>In-app notifications:</strong> the notification messages sent between caregivers and dependents are stored so they can be shown in the app.</li>
+    <li><strong>In-app notifications:</strong> the notification messages sent between caregivers and dependents are stored so they can be shown in the app. A notification about a dependent's entry includes what was logged, for example &ldquo;logged a drink, 250 mL&rdquo;.</li>
   </ul>
   <p>NathansApp does not use advertising, analytics or tracking tools, and does not track you across other apps or websites.</p>
 
   <h2>Apple Health</h2>
-  <p>If you choose to connect Apple Health, NathansApp asks for permission to <strong>read</strong> your water intake. That data is:</p>
+  <p>Apple Health is <strong>off until you turn it on</strong>. Nothing below happens until you tap Connect in the app and allow it in Apple&rsquo;s own permission sheet, and each part has its own switch under Account &rarr; Apple Health.</p>
+
+  <h3>Reading from Apple Health</h3>
+  <p>With your permission, the app reads your <strong>water intake</strong> and your <strong>dietary sodium intake</strong> from Apple Health, so it can show them alongside what you log in the app.</p>
+
+  <h3>Saving to Apple Health</h3>
+  <p>If you turn saving on, the app saves the water you log in the app to Apple Health. Only drinks you log as Water are saved, and editing or deleting one in the app updates Apple Health too.</p>
+
+  <h3>Keeping daily totals in your account</h3>
+  <p>This is off unless you turn it on. If you turn on &ldquo;Keep in my account&rdquo;, the app copies <strong>daily totals</strong> &mdash; your water from other apps and your dietary sodium intake, one total per day, including past days &mdash; from your device to your account on our servers. Individual Apple Health samples are not copied. This is so you can see your trends over time in the app and, if you choose, so your caregiver can.</p>
+
+  <h3>Sharing those totals with your caregiver</h3>
+  <p>This is a separate choice, also off unless you turn it on. The app names the caregiver you are linked with when you agree, and only that person can see the totals. If your caregiver changes for any reason &mdash; you unlink, or link someone new &mdash; sharing stops by itself, and you would have to agree again. No one else is given this data.</p>
+
+  <h3>Stopping, and what stays behind</h3>
   <ul>
-    <li>used only to show your water intake next to the drinks you log in the app;</li>
-    <li>read and displayed on your device only, and not uploaded to our servers;</li>
-    <li>never sold, shared with third parties, or used for advertising or marketing.</li>
+    <li>You can turn any of this off at any time. <strong>Stop and delete</strong> turns off keeping and sharing and deletes every daily total copied to your account, in one step.</li>
+    <li>Stopping without deleting leaves the copies in your account, visible only to you, until you delete them or delete your account.</li>
+    <li><strong>Water the app already saved to Apple Health stays in Apple Health.</strong> Turning saving off, or deleting your account, does not remove it &mdash; remove it yourself in Apple&rsquo;s Health app.</li>
+    <li>You can also withdraw the app&rsquo;s access in iOS Settings &rarr; Health &rarr; Data Access &amp; Devices &rarr; NathansApp.</li>
   </ul>
-  <p>NathansApp does not write data to Apple Health. You can turn off access at any time in the iOS Settings app under Health &rarr; Data Access &amp; Devices &rarr; NathansApp.</p>
+  <p>Apple Health information is never sold, never used for advertising or marketing, and never disclosed to anyone other than the caregiver you name and the service providers listed below.</p>
 
   <h2>How your information is used</h2>
   <ul>
-    <li>To provide the app: storing and displaying your logs, charts and history.</li>
+    <li>To provide the app: storing and displaying your logs, charts, trends and history.</li>
     <li>To notify a linked caregiver when you log an entry, if caregiver notifications are set up.</li>
+    <li>To show a caregiver the Apple Health totals a dependent has chosen to share with them.</li>
     <li>To maintain and secure your account.</li>
   </ul>
   <p>Your information is not sold and is not used for advertising.</p>
@@ -80,7 +97,7 @@
   <h2>Who can see your information</h2>
   <ul>
     <li><strong>You</strong>, when signed in to your account.</li>
-    <li><strong>Caregivers you are linked with</strong>, who receive notifications about entries you log.</li>
+    <li><strong>A caregiver you are linked with</strong>, who can see your name, photo and the relationship, receives notifications about the entries you log, and &mdash; only if you turn sharing on &mdash; can see the Apple Health daily totals described above. A caregiver cannot open your drink, urine output, medication, lab value or symptom logs.</li>
     <li><strong>Service providers</strong> that run the app on our behalf, only as needed to provide it:
       <ul>
         <li><a href="https://supabase.com/privacy">Supabase</a> for account sign-in and data storage;</li>
@@ -91,16 +108,18 @@
   <p>We may also disclose information if required by law.</p>
 
   <h2>Security</h2>
-  <p>Data is sent over encrypted connections (HTTPS). Database access rules limit each account to its own records. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
+  <p>Data is sent over encrypted connections (HTTPS). Database access rules limit each account to its own records, apart from the few things described above that you have chosen to share with a linked caregiver. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
 
   <h2>Keeping and deleting your information</h2>
-  <p>Your information is kept for as long as your account exists. You can delete individual log entries in the app at any time. To delete your account and all associated data, email <a href="mailto:nathanielwdeal@gmail.com">nathanielwdeal@gmail.com</a> from the address on your account, and it will be removed within 30 days.</p>
+  <p>Your information is kept for as long as your account exists. You can delete individual log entries in the app at any time.</p>
+  <p>To delete your account, open the app and go to <strong>Account &rarr; Delete Account</strong>. This removes your logs, any Apple Health daily totals kept in your account, the notifications sent to you and the notifications about you in a caregiver&rsquo;s inbox, your caregiver link and your profile, straight away. If you are a caregiver, deleting your account does not delete the accounts of the people you care for. You can also email <a href="mailto:nathanielwdeal@gmail.com">nathanielwdeal@gmail.com</a> from the address on your account, and it will be removed within 30 days.</p>
+  <p>Two things outlive deletion: water the app saved to Apple Health stays on your phone, as described above; and our authentication provider keeps security logs of sign-ins, sign-ups and account deletions, which include your email address and account identifier. Those logs are kept only for a short period in the provider&rsquo;s log storage, and in a security log inside the database, which we purge periodically rather than on a fixed schedule.</p>
 
   <h2>Children</h2>
-  <p>NathansApp is not directed at children under 13, and children should not create their own accounts. A caregiver may record information about a dependent, including a minor, and is responsible for that information.</p>
+  <p>NathansApp is not directed at children under 13, and a child under 13 should not create an account. Everyone whose information is in the app has their own account, including a dependent, so a parent or guardian should set up and look after the account of a young person in their care. If you believe a child under 13 has created an account, email us and it will be deleted.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy changes, the updated version will be posted on this page with a new effective date. Significant changes, such as sending Apple Health data to our servers, will be announced in the app before they take effect.</p>
+  <p>If this policy changes, the updated version will be posted on this page with a new effective date. Where a change means information starts leaving your device &mdash; as keeping Apple Health totals in your account does &mdash; the app asks you to agree before it takes effect, and a material change to that wording means agreeing again.</p>
 
   <h2>Contact</h2>
   <p>Questions or requests: <a href="mailto:nathanielwdeal@gmail.com">nathanielwdeal@gmail.com</a></p>
