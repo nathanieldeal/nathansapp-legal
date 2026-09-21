@@ -42,7 +42,7 @@
 <body>
 <main>
   <h1>NathansApp Privacy Policy</h1>
-  <p class="meta">Effective September 20, 2026</p>
+  <p class="meta">Effective September 21, 2026</p>
 
   <p>NathansApp is a personal app for logging fluid intake, urine output, medications, lab values and symptoms, and for keeping a caregiver informed. This policy explains what information the app collects, how it is used, and the choices you have.</p>
 
@@ -51,7 +51,7 @@
     <li><strong>Account information:</strong> your email address and password (used to sign in; passwords are stored in hashed form by our authentication provider), your name, phone number, profile photo, time zone and role (for example, caregiver).</li>
     <li><strong>Settings:</strong> preferences such as your daily drink goal, drink presets, measurement units and your Apple Health choices.</li>
     <li><strong>Health logs you enter:</strong> drinks (type, amount and time), urine output (amount, color and time), medications (name, dose and time), lab values (such as sodium, potassium, calcium, chloride and glucose), and symptoms (type, severity and notes).</li>
-    <li><strong>Caregiver and dependent links:</strong> the caregiver and the person they care for each have their own account. To link them, the dependent creates a short code in the app and gives it to the caregiver, who enters it; creating the code is how the dependent agrees to the link. A dependent has one caregiver at a time, and either person can unlink at any time. Link codes are stored only as a one-way hash and expire after ten minutes.</li>
+    <li><strong>Caregiver and dependent links:</strong> the caregiver and the person they care for each have their own account. To link them, the dependent creates a short code in the app and gives it to the caregiver, who enters it; creating the code is how the dependent agrees to the link, and to what a linked caregiver can see, described under &ldquo;Who can see your information&rdquo;. The app lists it before the code is created. A dependent has one caregiver at a time, and either person can unlink at any time. Link codes are stored only as a one-way hash and expire after ten minutes.</li>
   </ul>
 
   <h2>Information collected automatically</h2>
@@ -88,7 +88,7 @@
   <h2>How your information is used</h2>
   <ul>
     <li>To provide the app: storing and displaying your logs, charts, trends and history.</li>
-    <li>To notify a linked caregiver when you log an entry, if caregiver notifications are set up.</li>
+    <li>To show a linked caregiver your logs, and to notify them when you log a drink, urine output or medication.</li>
     <li>To show a caregiver the Apple Health totals a dependent has chosen to share with them.</li>
     <li>To maintain and secure your account.</li>
   </ul>
@@ -97,12 +97,14 @@
   <h2>Who can see your information</h2>
   <ul>
     <li><strong>You</strong>, when signed in to your account.</li>
-    <li><strong>A caregiver you are linked with</strong>, who can see your name, photo and the relationship, and receives notifications about the entries you log. Two further things are shared only if you turn them on, each separately and each off until you do:
+    <li><strong>A caregiver you are linked with.</strong> Linking is the choice: there is no separate switch for any of this. While you are linked, that caregiver:
       <ul>
-        <li><strong>Your logs.</strong> With &ldquo;Share my logs&rdquo; on, that caregiver can read your drink, urine output, medication, lab value and symptom entries, including ones you recorded before you turned it on. They can only read them: a caregiver cannot add, change or delete anything in your logs.</li>
-        <li><strong>Apple Health daily totals</strong>, as described above.</li>
+        <li>can see your name, photo and the relationship;</li>
+        <li>can read your logs &mdash; drinks, urine output, medications, lab values and symptoms &mdash; including entries you recorded before you linked;</li>
+        <li>receives a notification when you log a drink, urine output or medication.</li>
       </ul>
-      Either kind of sharing is tied to the one caregiver you are linked with at the time, and both end by themselves whenever that changes &mdash; if either of you unlinks, if you link someone else, or if you link the same person again. Turning sharing back on is always your decision.</li>
+      A caregiver can only read your logs: they cannot add, change or delete anything in them. Unlinking, by either of you, stops their access to your logs and any new notifications. It does not remove notifications they have already received. Access is tied to the one caregiver you are linked with at the time. If you unlink and later link the same person again, they can read your logs again, including your history.
+      <br><br><strong>Apple Health daily totals</strong> are the exception: they are shared only if you turn that on separately, as described above, and that sharing ends whenever your caregiver changes.</li>
     <li><strong>Service providers</strong> that run the app on our behalf, only as needed to provide it:
       <ul>
         <li><a href="https://supabase.com/privacy">Supabase</a> for account sign-in and data storage;</li>
@@ -113,7 +115,7 @@
   <p>We may also disclose information if required by law.</p>
 
   <h2>Security</h2>
-  <p>Data is sent over encrypted connections (HTTPS). Database access rules limit each account to its own records, apart from the few things described above that you have chosen to share with a linked caregiver. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
+  <p>Data is sent over encrypted connections (HTTPS). Database access rules limit each account to its own records, apart from what a linked caregiver can see, as described above. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
 
   <h2>Keeping and deleting your information</h2>
   <p>Your information is kept for as long as your account exists. You can delete individual log entries in the app at any time.</p>
